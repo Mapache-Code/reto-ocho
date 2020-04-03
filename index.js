@@ -7,6 +7,7 @@ function validateEmail() {
         msgError.setAttribute('hidden', "");
         email.value = "";
     } else {
+        event.preventDefault();
         email.classList.add('main__email--error');
         msgError.removeAttribute('hidden', "");
     }
