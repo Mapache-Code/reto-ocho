@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:300,600,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Frontend Mentor | Ping coming soon page</title>
+</head>
+
+<body>
+
+  <header class="header">
+    <img class="header__logo" src="images/logo.svg" alt="Logo">
+  </header>
+
+  <main class="main">
+    <div class="main__detail">
+      <h1 class="main__title">
+        <span class="main__title--unbold">We are launching</span> soon!
+      </h1>
+      <p class="main__text">Subscribe and get notified</p>
+      <form class="main__form">
+        <div class="main__box">
+          <input id="email" class="main__email" type="text" placeholder="Your email address...">
+          <p id="error" class="main__message main__message--error" hidden>Please provide a valid email address</p>
+        </div>
+        <button class="main__button" type="submit" onclick="validateEmail()">Notify Me</button>
+      </form>
+    </div>
+    <img class="main__image" src="images/illustration-dashboard.png" alt="Illustration Dashboard">
+  </main>
+
+  <footer class="footer">
+    <ul class="footer__socials">
+      <li class="footer__item">
+        <a class="footer__link" href="#">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link" href="#">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link" href="#">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+      </li>
+    </ul>
+
+    <p class="footer__copyright">&copy; Copyright Ping. All rights reserved.</p>
+
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/Mapache-Code">Mapache Code</a>.
+    </p>
+  </footer>
+
+  <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
